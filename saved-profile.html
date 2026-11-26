@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindMyMeds | Saved Medicines & Profile</title>
+    <meta name="description" content="View saved medicines and update your personal profile details." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="saved-profile">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="FindMyMeds home page">
+                <img class="brand-mark" src="assets/findmymeds-logo.jpeg" alt="FindMyMeds - Find the medicine you need faster" />
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="search-results.html">Search Results</a>
+                <a href="pharmacy-details.html">Pharmacy Details</a>
+                <a href="saved-profile.html" class="active">Saved Medicines &amp; Profile</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container profile-layout">
+        <section class="saved-panel card">
+          <div class="section-topline">
+            <span class="eyebrow">Saved Medicines</span>
+          </div>
+          <h1>My saved medicines</h1>
+          <div
+            id="saved-medicine-list"
+            class="saved-list"
+            aria-live="polite"
+          ></div>
+        </section>
+
+        <aside class="profile-card card">
+          <div class="section-topline">
+            <span class="eyebrow">User Profile</span>
+          </div>
+
+          <form id="profile-form">
+            <div class="field-group">
+              <label for="user-name">User name</label>
+              <input
+                id="user-name"
+                type="text"
+                placeholder="Enter your name"
+                disabled
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="user-phone">Phone number</label>
+              <input
+                id="user-phone"
+                type="tel"
+                placeholder="Enter your phone number"
+                disabled
+              />
+            </div>
+
+            <div class="profile-actions">
+              <button id="edit-profile-btn" type="button" class="secondary-btn">
+                Edit Profile
+              </button>
+              <button id="save-profile-btn" type="submit" class="primary-btn">
+                Save Profile
+              </button>
+            </div>
+          </form>
+
+          <p
+            id="profile-feedback"
+            class="feedback-message"
+            aria-live="polite"
+          ></p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>FindMyMeds</h3>
+          <p>
+            Helping families find medicine faster across the Greater Banjul
+            Area.
+          </p>
+        </div>
+        <div>
+          <p>
+            Medicine availability information is for demonstration purposes
+            only. Please contact the pharmacy to confirm stock before
+            travelling. FindMyMeds does not provide medical advice or
+            prescriptions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

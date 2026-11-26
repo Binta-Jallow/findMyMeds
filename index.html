@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindMyMeds | Home</title>
+    <meta name="description" content="FindMyMeds helps you locate medicine availability at participating pharmacies in the Greater Banjul Area." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="home">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="FindMyMeds home page">
+                <img class="brand-mark" src="assets/findmymeds-logo.jpeg" alt="FindMyMeds - Find the medicine you need faster" />
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="search-results.html">Search Results</a>
+                <a href="pharmacy-details.html">Pharmacy Details</a>
+                <a href="saved-profile.html">Saved Medicines &amp; Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Your local medicine guide</p>
+                    <h1>Find Your Medicine, Faster.</h1>
+                    <p class="lead">
+                        Search participating pharmacies in the Greater Banjul Area and quickly discover which locations currently have the medicine you need.
+                    </p>
+
+                    <form id="medicine-search-form" class="search-form">
+                        <label class="sr-only" for="medicine-search-input">Medicine name</label
+              >
+              <input
+                id="medicine-search-input"
+                type="text"
+                name="medicine"
+                placeholder="Search for a medicine"
+                aria-label="Search medicine"
+              />
+              <button type="submit" class="primary-btn">Search</button>
+            </form>
+
+            <div class="popular-searches">
+              <span>Popular searches:</span>
+              <button
+                type="button"
+                class="popular-pill"
+                data-medicine="Paracetamol"
+              >
+                Paracetamol
+              </button>
+              <button
+                type="button"
+                class="popular-pill"
+                data-medicine="Vitamin C"
+              >
+                Vitamin C
+              </button>
+              <button
+                type="button"
+                class="popular-pill"
+                data-medicine="Cetirizine"
+              >
+                Cetirizine
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="status-card card">
+              <div class="card-header">
+                <span class="mini-badge">Nearby</span>
+                <span class="mini-text">Updated today</span>
+              </div>
+              <div class="availability-row">
+                <div>
+                  <strong>Paracetamol</strong>
+                  <small>HealthPlus Pharmacy</small>
+                </div>
+                <span class="status-pill available">Available</span>
+              </div>
+              <div class="availability-row">
+                <div>
+                  <strong>Vitamin C</strong>
+                  <small>Care Pharmacy</small>
+                </div>
+                <span class="status-pill available">Available</span>
+              </div>
+              <div class="availability-row">
+                <div>
+                  <strong>Cetirizine</strong>
+                  <small>MediCare Pharmacy</small>
+                </div>
+                <span class="status-pill limited">Limited</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">How It Works</p>
+            <h2>Three simple steps to find the right medicine</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card card">
+              <div class="step-icon">1</div>
+              <h3>Search</h3>
+              <p>
+                Enter the medicine name you need and compare nearby pharmacies.
+              </p>
+            </article>
+
+            <article class="step-card card">
+              <div class="step-icon">2</div>
+              <h3>Check Availability</h3>
+              <p>
+                View current status and stock levels for supported pharmacies.
+              </p>
+            </article>
+
+            <article class="step-card card">
+              <div class="step-icon">3</div>
+              <h3>Visit or Call</h3>
+              <p>Confirm details with the pharmacy before you travel.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>FindMyMeds</h3>
+          <p>
+            Helping families find medicine faster across the Greater Banjul
+            Area.
+          </p>
+        </div>
+        <div>
+          <p>
+            Medicine availability information is for demonstration purposes
+            only. Please contact the pharmacy to confirm stock before
+            travelling. FindMyMeds does not provide medical advice or
+            prescriptions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

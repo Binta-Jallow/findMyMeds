@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindMyMeds | Pharmacy Details</title>
+    <meta name="description" content="Detailed pharmacy profile and medicine availability information." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="pharmacy-details">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="FindMyMeds home page">
+                <img class="brand-mark" src="assets/findmymeds-logo.jpeg" alt="FindMyMeds - Find the medicine you need faster" />
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="search-results.html">Search Results</a>
+                <a href="pharmacy-details.html" class="active">Pharmacy Details</a>
+                <a href="saved-profile.html">Saved Medicines &amp; Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell detail-page-shell">
+        <div class="container detail-layout">
+            <section class="detail-card card">
+                <div class="section-topline">
+                    <span class="eyebrow">Pharmacy Details</span>
+                    <span id="detail-status" class="status-badge">Available</span>
+                </div>
+
+                <h1 id="detail-name">HealthPlus Pharmacy</h1>
+                <p id="detail-location" class="detail-location">Kanifing</p>
+
+                <div class="detail-grid">
+                    <div class="meta-block">
+                        <span class="meta-label">Address</span>
+                        <p id="detail-address">Main Road, Kanifing, The Gambia</p>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">Medicine Searched</span>
+                        <p id="detail-medicine">Paracetamol</p>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">Availability</span>
+                        <p id="detail-availability">Available</p>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">Phone</span>
+                        <p id="detail-phone">+220 555 1234</p>
+                    </div>
+                    <div class="meta-block">
+                        <span class="meta-label">Opening Hours</span>
+                        <p id="detail-hours">Mon - Sat: 8:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="detail-actions">
+                    <button id="call-button" class="primary-btn" type="button">
+              Call Pharmacy
+            </button>
+                    <button id="directions-button" class="secondary-btn" type="button">
+              Get Directions
+            </button>
+                    <button id="save-medicine-button" class="success-btn" type="button">
+              Save Medicine
+            </button>
+                </div>
+
+                <p id="feedback-message" class="feedback-message" aria-live="polite"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <h3>FindMyMeds</h3>
+                <p>
+                    Helping families find medicine faster across the Greater Banjul Area.
+                </p>
+            </div>
+            <div>
+                <p>
+                    Medicine availability information is for demonstration purposes only. Please contact the pharmacy to confirm stock before travelling. FindMyMeds does not provide medical advice or prescriptions.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

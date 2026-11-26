@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindMyMeds | Search Results</title>
+    <meta name="description" content="Search results for medicine availability in the Greater Banjul Area." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-page="search-results">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand" aria-label="FindMyMeds home page">
+                <img class="brand-mark" src="assets/findmymeds-logo.jpeg" alt="FindMyMeds - Find the medicine you need faster" />
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="search-results.html" class="active">Search Results</a>
+                <a href="pharmacy-details.html">Pharmacy Details</a>
+                <a href="saved-profile.html">Saved Medicines &amp; Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <div class="container">
+            <section class="page-intro">
+                <p class="eyebrow">Search Results</p>
+                <h1>Medicine availability in the Greater Banjul Area</h1>
+                <p class="result-summary">
+                    Showing results for <span id="search-term">Paracetamol</span>
+                </p>
+            </section>
+
+            <section class="toolbar card">
+                <form id="mini-search-form" class="mini-search-form">
+                    <label class="sr-only" for="mini-search-input">Search medicine</label
+            >
+            <input
+              id="mini-search-input"
+              type="text"
+              placeholder="Search another medicine"
+              aria-label="Search another medicine"
+            />
+            <button type="submit" class="primary-btn">Search</button>
+          </form>
+        </section>
+
+        <section
+          id="results-list"
+          class="results-grid"
+          aria-live="polite"
+        ></section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div>
+          <h3>FindMyMeds</h3>
+          <p>
+            Helping families find medicine faster across the Greater Banjul
+            Area.
+          </p>
+        </div>
+        <div>
+          <p>
+            Medicine availability information is for demonstration purposes
+            only. Please contact the pharmacy to confirm stock before
+            travelling. FindMyMeds does not provide medical advice or
+            prescriptions.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
